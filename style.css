@@ -1,0 +1,112 @@
+/* Common Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Edu+VIC+WA+NT+Beginner&family=Monoton&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,600&family=Roboto+Slab:wght@900&family=Roboto:wght@400;700;900&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Bellota Text', cursive;
+    text-decoration: none;
+    overflow: none;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* End of Common Styles */
+
+/* Section-1 */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.floating-bg {
+    background-color: rgba(220, 20, 60, 0.8);
+    width: 150vw;
+    height: 150vw;
+    border-radius: 45%;
+    position: absolute;
+    top:-125vw;
+    left:-25vw ;
+    animation: rotate 35s infinite;
+}
+.floating-bg::before {
+    content: "";
+    background-color: rgba(220, 20, 60, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation: rotate 35s infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 20;
+    position: relative;
+    top: 4rem;
+}
+
+.navbar-link{
+    color:#fff;
+    font-weight: 700;
+    font-size: 2.2rem;
+    width: 1rem;
+    word-wrap: break-word;
+    transition: all .5s;
+}
+.navbar-link:hover{
+    width: 15rem;
+    transition: all 2.5s;
+}
+.section1-heading{
+    font-family: 'Monoton', cursive;
+    font-size: 8rem;
+    position: absolute;
+    top: 18vw;
+    left:50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-shadow: .3rem .3rem .3rem #888;
+    background-color: #fff;
+    text-align: center;
+    width: 85rem;
+    padding: .8rem 1.6rem;
+    border-radius: 0.8rem;
+    opacity: 0.9;
+}
+
+.section-1 .logo{
+    position:absolute;
+    top:30vw ;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15rem;
+    color: rgba(220, 20, 60, 0.8);
+    text-shadow: .1rem .1rem .2rem #ddd,
+    -.1rem -.1rem .2rem #ddd;
+}
+
+/* End of Section-1 */
