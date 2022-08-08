@@ -121,7 +121,7 @@ html {
     margin-top: 50px;
 }
 
-.section2-heading{
+.section-heading{
     font-size: 10rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -196,3 +196,157 @@ html {
     margin: 1rem auto;
 }
 /* End of Section-2 */
+
+/* section-3 team-members */
+
+.section-3{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+
+.team-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    padding-top: 8rem;
+    width:100%;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    padding:1rem 1rem 2rem 1rem;
+    background-color: #fffeee;
+    box-shadow: 1rem 1rem 2rem #ddd,
+    -1rem -1rem 2rem #eee;
+    position: relative;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.team-member:first-child{
+    align-self: flex-start;
+}
+.team-member:last-child{
+    align-self: flex-end;
+}
+
+
+.team-member:hover{
+    opacity: 1;
+}
+
+.team-member img{
+    width: 100%;
+    border-radius: 0.5rem;
+    
+}
+
+.team-member-name{    
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: #796717;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+}
+
+.team-member-name span{
+    font-size: 1.7rem;
+}
+
+.team-member-skills{
+    display: flex;
+    justify-content: start;
+}
+
+.team-member-skills li{
+    padding-right: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.projects-btn{
+    background-color: #d89641;
+    width: 40%;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: .5rem .2rem;
+    border-radius: 5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.story-btn{
+    width: 4rem;
+    height: 4rem;
+    background-color: #222;
+    border-radius: 50%;
+    position: absolute;
+    top:-1rem;
+    right: -1rem;
+    z-index: 50;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.story-btn.change{
+    transform: rotate(405deg);
+}
+
+
+.story-btn-line i{
+    font-size: 1.7rem;
+    color: #e7e5e5;
+    display: inline-block;
+    }
+
+  
+.story{
+   background-color: crimson;
+   color: #fff;
+   width:100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   transform: scale(0);
+   border-radius: 50rem 0 50rem 50rem;
+   transition: all 0.4s ease-in-out;
+   transform-origin: top right;
+}
+
+.story.change{
+    transform: scale(1);
+    border-radius: 0;
+}
+
+.story-heading{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.story-para{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    text-indent: 3rem;
+}
+/* End of section-3  */
