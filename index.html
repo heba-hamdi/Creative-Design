@@ -13,12 +13,12 @@
 <body>
     <div class="container">
         <!-- section one -->
-        <div class="section-1">
+        <div class="section-1" id="Home">
             <nav class="navbar">
-                <a class="navbar-link" href="#">Design</a>
-                <a class="navbar-link" href="#">Customers</a>
-                <a class="navbar-link" href="#">Team</a>
-                <a class="navbar-link" href="#">Contact</a>
+                <a class="navbar-link" href="#Home">Design</a>
+                <a class="navbar-link" href="#Customers">Customers</a>
+                <a class="navbar-link" href="#Team">Team</a>
+                <a class="navbar-link" href="#Contact">Contact</a>
             </nav>
 
             <div class="floating-bg"></div>
@@ -29,7 +29,7 @@
         </div>
         <!-- End of section one -->
         <!-- section two -->
-        <div class="section-2">
+        <div class="section-2" id="Customers">
             <h1 class="section-heading">Customers</h1>
 
             <div class="customers-wrapper">
@@ -91,7 +91,7 @@
 
         <!-- section-3 team-members -->
         <div class="section-3">
-            <h2 class="section-heading">Team</h2>
+            <h2 class="section-heading" id="Team">Team</h2>
             <div class="team-wrapper">
 
 
@@ -184,8 +184,8 @@
     </div>
     <!-- End of section-3 team-members -->
 
-    <!-- section-3 contact and footer -->
-    <section class="section-4">
+    <!-- section-4 contact and footer -->
+    <section class="section-4" id="Contact">
         <div class="section-heading">Contact</div>
         <div class="form-container">
             <img src="imgs/form-img.png" alt="" class="form-img">
@@ -198,7 +198,12 @@
         </div>
         <p class="copyright">Copyright &copy; Creative Designs All Rights Reserved</p>
     </section>
-    <!-- End of section-3 contact and footer -->
+    <!-- End of section-4 contact and footer -->
+    <!-- Scrolling Button -->
+    <a href="#Home" class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- End of Scrolling Button -->
     </div>
     <script src="./script.js"></script>
 </body>
